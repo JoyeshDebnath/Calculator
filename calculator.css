@@ -1,0 +1,113 @@
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    min-height: 100vh;
+    min-width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.2)), url(./banner.jpg) center/cover fixed no-repeat;
+}
+
+.calculator
+{
+    flex: 0 0 50%;
+    
+    
+}
+.calculator:hover
+{
+    box-shadow:0 0 50px rgb(34, 33, 33);
+}
+
+.buttons
+{
+    display: flex;
+    flex-wrap: wrap;
+}
+.heading
+{
+    position: absolute;
+    color: black;
+    font-size: 2rem;
+    text-shadow: 3px 3px 10px black;
+    top: 0;
+}
+
+.cal_screen
+{
+    border: none;
+    outline: none;
+    text-shadow: 3px 3px 10px black;
+    width: 100%;
+    height: 3rem;
+    background-color: #7E7F9A;
+    color: aliceblue;
+    font-size: 1rem;
+    font-weight: bolder;
+    text-transform: capitalize;
+    text-align: start;
+    text-shadow: 3px 3px 10px black;
+}
+
+.btn-operator
+{
+    background-color:#F2DC5D;
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-num
+{
+    background-color: #A7C4B5;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-num:hover
+{
+    background-color: #A9D8B8;
+}
+.btn-operator:hover
+{
+    background-color: #F2A359;
+}
+
+.btn
+{
+    border-radius: 10%;
+    outline: none;
+    border: 2px solid #0FA3B1;
+    text-shadow: 3px 3px 10px black;
+       font-size: 2rem;
+    padding: 0.6rem;
+    flex: 0 0 33.3%;
+    cursor: pointer;
+}
+.equal_btn,.reset_btn
+{
+    font-size: 1rem;
+    text-shadow: 3px 3px 10px black;
+    background-color: #EDDEA4;
+    transition: all 0.5s ease-in-out;
+    width: 50%;
+    height: 2rem;
+    padding: 0.4rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.equal_btn
+{
+    border-right: 2px solid black;
+}
+
+.equal_btn:hover,.reset_btn:hover
+{
+    background-color: #F7A072;
+    box-shadow: 0 0 30px rgb(204, 200, 200);
+}
